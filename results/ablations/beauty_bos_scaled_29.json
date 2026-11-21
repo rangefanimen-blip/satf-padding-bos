@@ -1,0 +1,89 @@
+{
+  "validation": {
+    "n": 5600,
+    "ndcg": 0.002253046859946548,
+    "hr": 0.005,
+    "eval_seconds": 0.23929720802698284,
+    "ms_per_user": 0.04273164429053265,
+    "short_n": 5532,
+    "short_ndcg": 0.002280741579121596,
+    "full_n": 68,
+    "full_ndcg": 0.0,
+    "1_5_n": 3014,
+    "1_5_ndcg": 0.0032114518818440567,
+    "6_20_n": 2138,
+    "6_20_ndcg": 0.0013740628829853523,
+    "21_plus_n": 448,
+    "21_plus_ndcg": 0.0
+  },
+  "test": {
+    "n": 4496,
+    "ndcg": 0.0045278104065411265,
+    "hr": 0.009119217081850534,
+    "eval_seconds": 0.192461833008565,
+    "ms_per_user": 0.042807347199413925,
+    "short_n": 4442,
+    "short_ndcg": 0.004582853576724202,
+    "full_n": 54,
+    "full_ndcg": 0.0,
+    "1_5_n": 2560,
+    "1_5_ndcg": 0.0075823178041871135,
+    "6_20_n": 1652,
+    "6_20_ndcg": 0.0005728220394006605,
+    "21_plus_n": 284,
+    "21_plus_ndcg": 0.0
+  },
+  "dataset": "beauty",
+  "model": "bos_scaled",
+  "seed": 29,
+  "fit_seconds": 0.5345992500078864,
+  "peak_rss_mb": 186.5625,
+  "nnz": 177245,
+  "losses": null,
+  "core_norms": [
+    184.19381275143007,
+    220.53921316580434,
+    238.38742465473436
+  ],
+  "source_sha256": "516cc03c1712f17989d3508336311a4c8036e8922d58a7e2bff7483600cdcf07",
+  "config": {
+    "name": "mechanism_controls_v1",
+    "datasets": [
+      "ml1m",
+      "beauty",
+      "games"
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "quantiles": [
+      0.8,
+      0.9
+    ],
+    "k": 50,
+    "tensor": {
+      "rank": 12,
+      "window": 5,
+      "local_rank": 2,
+      "sequence_rank": 2,
+      "decay": 1.0,
+      "scaling": 1.0,
+      "iterations": 3
+    },
+    "models": [
+      "pad_balanced",
+      "start",
+      "zero_scaled",
+      "pad_scaled",
+      "bos_scaled",
+      "pad_scaled_frequency"
+    ]
+  },
+  "split_sha256": "0927225b8c9ac61c3c40b53b29f73eb085bb7f0d07568fa6d8ba49ed03ca4082",
+  "device": "cpu",
+  "threads": 2,
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "python": "3.12.14"
+}

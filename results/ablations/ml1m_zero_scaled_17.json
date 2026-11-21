@@ -1,0 +1,89 @@
+{
+  "validation": {
+    "n": 523,
+    "ndcg": 0.0,
+    "hr": 0.0,
+    "eval_seconds": 0.023501959047280252,
+    "ms_per_user": 0.044936824182180216,
+    "short_n": 81,
+    "short_ndcg": 0.0,
+    "full_n": 442,
+    "full_ndcg": 0.0,
+    "1_5_n": 5,
+    "1_5_ndcg": 0.0,
+    "6_20_n": 28,
+    "6_20_ndcg": 0.0,
+    "21_plus_n": 490,
+    "21_plus_ndcg": 0.0
+  },
+  "test": {
+    "n": 1178,
+    "ndcg": 0.0009041085628783596,
+    "hr": 0.0025466893039049238,
+    "eval_seconds": 0.047909250017255545,
+    "ms_per_user": 0.040669991525683825,
+    "short_n": 234,
+    "short_ndcg": 0.0,
+    "full_n": 944,
+    "full_ndcg": 0.0011282202193545633,
+    "1_5_n": 22,
+    "1_5_ndcg": 0.0,
+    "6_20_n": 84,
+    "6_20_ndcg": 0.0,
+    "21_plus_n": 1072,
+    "21_plus_ndcg": 0.000993507357342078
+  },
+  "dataset": "ml1m",
+  "model": "zero_scaled",
+  "seed": 17,
+  "fit_seconds": 0.2598538339952938,
+  "peak_rss_mb": 162.65625,
+  "nnz": 238226,
+  "losses": null,
+  "core_norms": [
+    3.2601268527343823,
+    4.731540407483348,
+    5.7633236186782995
+  ],
+  "source_sha256": "516cc03c1712f17989d3508336311a4c8036e8922d58a7e2bff7483600cdcf07",
+  "config": {
+    "name": "mechanism_controls_v1",
+    "datasets": [
+      "ml1m",
+      "beauty",
+      "games"
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "quantiles": [
+      0.8,
+      0.9
+    ],
+    "k": 50,
+    "tensor": {
+      "rank": 12,
+      "window": 5,
+      "local_rank": 2,
+      "sequence_rank": 2,
+      "decay": 1.0,
+      "scaling": 1.0,
+      "iterations": 3
+    },
+    "models": [
+      "pad_balanced",
+      "start",
+      "zero_scaled",
+      "pad_scaled",
+      "bos_scaled",
+      "pad_scaled_frequency"
+    ]
+  },
+  "split_sha256": "f0bbf7b2d0adb97843892461cc3748af93458f97d9b88194e9a977edab7c2350",
+  "device": "cpu",
+  "threads": 2,
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "python": "3.12.14"
+}

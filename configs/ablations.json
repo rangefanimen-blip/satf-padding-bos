@@ -1,0 +1,9 @@
+{
+  "name": "mechanism_controls_v1",
+  "datasets": ["ml1m", "beauty", "games"],
+  "seeds": [17, 29, 43],
+  "quantiles": [0.8, 0.9],
+  "k": 50,
+  "tensor": {"rank": 12, "window": 5, "local_rank": 2, "sequence_rank": 2, "decay": 1.0, "scaling": 1.0, "iterations": 3},
+  "models": ["pad_balanced", "start", "zero_scaled", "pad_scaled", "bos_scaled", "pad_scaled_frequency"]
+}

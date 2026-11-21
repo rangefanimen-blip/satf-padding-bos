@@ -1,0 +1,89 @@
+{
+  "validation": {
+    "n": 523,
+    "ndcg": 0.005228379550058742,
+    "hr": 0.011472275334608031,
+    "eval_seconds": 0.019993958994746208,
+    "ms_per_user": 0.03822936710276521,
+    "short_n": 81,
+    "short_ndcg": 0.02936092984657654,
+    "full_n": 442,
+    "full_ndcg": 0.0008058986133665661,
+    "1_5_n": 5,
+    "1_5_ndcg": 0.06309297535714575,
+    "6_20_n": 28,
+    "6_20_ndcg": 0.07367037288524896,
+    "21_plus_n": 490,
+    "21_plus_ndcg": 0.0007269534430775963
+  },
+  "test": {
+    "n": 1178,
+    "ndcg": 0.009224728393253771,
+    "hr": 0.019524617996604415,
+    "eval_seconds": 0.04297762498026714,
+    "ms_per_user": 0.03648355261482779,
+    "short_n": 234,
+    "short_ndcg": 0.03540047688036048,
+    "full_n": 944,
+    "full_ndcg": 0.002736248365729442,
+    "1_5_n": 22,
+    "1_5_ndcg": 0.09880620692799803,
+    "6_20_n": 84,
+    "6_20_ndcg": 0.046595302344597966,
+    "21_plus_n": 1072,
+    "21_plus_ndcg": 0.004458011285345857
+  },
+  "dataset": "ml1m",
+  "model": "bos_scaled",
+  "seed": 17,
+  "fit_seconds": 0.24017070897389203,
+  "peak_rss_mb": 164.671875,
+  "nnz": 239924,
+  "losses": null,
+  "core_norms": [
+    27.534781732342577,
+    38.22229450739045,
+    39.778047321598
+  ],
+  "source_sha256": "516cc03c1712f17989d3508336311a4c8036e8922d58a7e2bff7483600cdcf07",
+  "config": {
+    "name": "mechanism_controls_v1",
+    "datasets": [
+      "ml1m",
+      "beauty",
+      "games"
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "quantiles": [
+      0.8,
+      0.9
+    ],
+    "k": 50,
+    "tensor": {
+      "rank": 12,
+      "window": 5,
+      "local_rank": 2,
+      "sequence_rank": 2,
+      "decay": 1.0,
+      "scaling": 1.0,
+      "iterations": 3
+    },
+    "models": [
+      "pad_balanced",
+      "start",
+      "zero_scaled",
+      "pad_scaled",
+      "bos_scaled",
+      "pad_scaled_frequency"
+    ]
+  },
+  "split_sha256": "f0bbf7b2d0adb97843892461cc3748af93458f97d9b88194e9a977edab7c2350",
+  "device": "cpu",
+  "threads": 2,
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "python": "3.12.14"
+}

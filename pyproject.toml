@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "satf-padding-bos"
+version = "0.1.0"
+description = "Reproducible Zero/PAD/BOS experiments for locally attentive sequential tensor factorization"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.12,<2", "pandas>=2.1,<3", "torch>=2.2,<3", "psutil>=5.9", "matplotlib>=3.8,<4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "nbformat>=5", "nbclient>=0.10", "ipykernel>=6"]
+report = ["reportlab>=4", "pypdf>=5", "pillow>=10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

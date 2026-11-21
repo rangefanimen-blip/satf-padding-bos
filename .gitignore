@@ -33,3 +33,11 @@ token.json
 .vscode/
 *.swp
 *.swo
+
+# Материалы других задач и локальная база знаний
+knowledge-base
+HW4_*.ipynb
+*.egg-info/
+
+# Временные выгрузки редактора графиков
+.chart-data-*/

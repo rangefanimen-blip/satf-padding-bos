@@ -1,0 +1,89 @@
+{
+  "validation": {
+    "n": 5600,
+    "ndcg": 0.0074637780008529045,
+    "hr": 0.012857142857142857,
+    "eval_seconds": 0.27047237497754395,
+    "ms_per_user": 0.04829863838884713,
+    "short_n": 5532,
+    "short_ndcg": 0.007555523645115015,
+    "full_n": 68,
+    "full_ndcg": 0.0,
+    "1_5_n": 3014,
+    "1_5_ndcg": 0.007925468664751694,
+    "6_20_n": 2138,
+    "6_20_ndcg": 0.008241688223992875,
+    "21_plus_n": 448,
+    "21_plus_ndcg": 0.000645233987316714
+  },
+  "test": {
+    "n": 4496,
+    "ndcg": 0.008196511874979419,
+    "hr": 0.014679715302491103,
+    "eval_seconds": 0.2101215830189176,
+    "ms_per_user": 0.04673522753979484,
+    "short_n": 4442,
+    "short_ndcg": 0.008296154297592857,
+    "full_n": 54,
+    "full_ndcg": 0.0,
+    "1_5_n": 2560,
+    "1_5_ndcg": 0.009230870315039056,
+    "6_20_n": 1652,
+    "6_20_ndcg": 0.008002717544435526,
+    "21_plus_n": 284,
+    "21_plus_ndcg": 0.0
+  },
+  "dataset": "beauty",
+  "model": "pad_balanced",
+  "seed": 43,
+  "fit_seconds": 0.9593434170237742,
+  "peak_rss_mb": 286.609375,
+  "nnz": 1041250,
+  "losses": null,
+  "core_norms": [
+    399.37983595152303,
+    554.0564105835443,
+    555.6756728873712
+  ],
+  "source_sha256": "516cc03c1712f17989d3508336311a4c8036e8922d58a7e2bff7483600cdcf07",
+  "config": {
+    "name": "mechanism_controls_v1",
+    "datasets": [
+      "ml1m",
+      "beauty",
+      "games"
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "quantiles": [
+      0.8,
+      0.9
+    ],
+    "k": 50,
+    "tensor": {
+      "rank": 12,
+      "window": 5,
+      "local_rank": 2,
+      "sequence_rank": 2,
+      "decay": 1.0,
+      "scaling": 1.0,
+      "iterations": 3
+    },
+    "models": [
+      "pad_balanced",
+      "start",
+      "zero_scaled",
+      "pad_scaled",
+      "bos_scaled",
+      "pad_scaled_frequency"
+    ]
+  },
+  "split_sha256": "0927225b8c9ac61c3c40b53b29f73eb085bb7f0d07568fa6d8ba49ed03ca4082",
+  "device": "cpu",
+  "threads": 2,
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "python": "3.12.14"
+}
