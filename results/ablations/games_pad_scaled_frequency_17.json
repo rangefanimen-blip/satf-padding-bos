@@ -1,0 +1,89 @@
+{
+  "validation": {
+    "n": 4134,
+    "ndcg": 0.007090570250432951,
+    "hr": 0.013062409288824383,
+    "eval_seconds": 0.16723987500881776,
+    "ms_per_user": 0.040454735125500185,
+    "short_n": 4075,
+    "short_ndcg": 0.007193231267555784,
+    "full_n": 59,
+    "full_ndcg": 0.0,
+    "1_5_n": 2620,
+    "1_5_ndcg": 0.006137366770283055,
+    "6_20_n": 1258,
+    "6_20_ndcg": 0.00953857450894181,
+    "21_plus_n": 256,
+    "21_plus_ndcg": 0.0048163661910133595
+  },
+  "test": {
+    "n": 3655,
+    "ndcg": 0.006776647440195418,
+    "hr": 0.013953488372093023,
+    "eval_seconds": 0.160956333973445,
+    "ms_per_user": 0.04403730067672914,
+    "short_n": 3596,
+    "short_ndcg": 0.006887832701310971,
+    "full_n": 59,
+    "full_ndcg": 0.0,
+    "1_5_n": 2222,
+    "1_5_ndcg": 0.006185408318310875,
+    "6_20_n": 1213,
+    "6_20_ndcg": 0.007852159200847062,
+    "21_plus_n": 220,
+    "21_plus_ndcg": 0.006818181818181818
+  },
+  "dataset": "games",
+  "model": "pad_scaled_frequency",
+  "seed": 17,
+  "fit_seconds": 0.9391645829891786,
+  "peak_rss_mb": 281.859375,
+  "nnz": 1110450,
+  "losses": null,
+  "core_norms": [
+    3.991899510573683,
+    6.905967781986229,
+    12.818456358371904
+  ],
+  "source_sha256": "516cc03c1712f17989d3508336311a4c8036e8922d58a7e2bff7483600cdcf07",
+  "config": {
+    "name": "mechanism_controls_v1",
+    "datasets": [
+      "ml1m",
+      "beauty",
+      "games"
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "quantiles": [
+      0.8,
+      0.9
+    ],
+    "k": 50,
+    "tensor": {
+      "rank": 12,
+      "window": 5,
+      "local_rank": 2,
+      "sequence_rank": 2,
+      "decay": 1.0,
+      "scaling": 1.0,
+      "iterations": 3
+    },
+    "models": [
+      "pad_balanced",
+      "start",
+      "zero_scaled",
+      "pad_scaled",
+      "bos_scaled",
+      "pad_scaled_frequency"
+    ]
+  },
+  "split_sha256": "259c12f126eee77630e2b1dce3aea803e6d6261a5087828cbdbdd4d4e8fa8ba9",
+  "device": "cpu",
+  "threads": 2,
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "python": "3.12.14"
+}

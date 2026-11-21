@@ -1,0 +1,98 @@
+{
+  "validation": {
+    "n": 5600,
+    "ndcg": 0.0008731346578350821,
+    "hr": 0.002142857142857143,
+    "eval_seconds": 0.2954622919787653,
+    "ms_per_user": 0.05276112356763666,
+    "short_n": 5532,
+    "short_ndcg": 0.0008838673325879356,
+    "full_n": 68,
+    "full_ndcg": 0.0,
+    "1_5_n": 3014,
+    "1_5_ndcg": 0.00034696340661890434,
+    "6_20_n": 2138,
+    "6_20_ndcg": 0.0009969092619789698,
+    "21_plus_n": 448,
+    "21_plus_ndcg": 0.003822353513875099
+  },
+  "test": {
+    "n": 4496,
+    "ndcg": 0.0011478811150123303,
+    "hr": 0.002224199288256228,
+    "eval_seconds": 0.2380004589795135,
+    "ms_per_user": 0.05293604514668895,
+    "short_n": 4442,
+    "short_ndcg": 0.0011618355454964964,
+    "full_n": 54,
+    "full_ndcg": 0.0,
+    "1_5_n": 2560,
+    "1_5_ndcg": 0.0008711706777429856,
+    "6_20_n": 1652,
+    "6_20_ndcg": 0.001513317191283293,
+    "21_plus_n": 284,
+    "21_plus_ndcg": 0.001516466753779553
+  },
+  "dataset": "beauty",
+  "model": "sasrec",
+  "seed": 17,
+  "fit_seconds": 9.174082082987297,
+  "peak_rss_mb": 413.84375,
+  "nnz": null,
+  "losses": [
+    4.346220995804374,
+    3.483592772566694,
+    2.383091932749453,
+    1.7102438447387613,
+    1.4816709673622925
+  ],
+  "core_norms": null,
+  "source_sha256": "516cc03c1712f17989d3508336311a4c8036e8922d58a7e2bff7483600cdcf07",
+  "config": {
+    "name": "interim_fixed_budget_v1",
+    "datasets": [
+      "ml1m",
+      "beauty",
+      "games"
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "quantiles": [
+      0.8,
+      0.9
+    ],
+    "k": 50,
+    "tensor": {
+      "rank": 12,
+      "window": 5,
+      "local_rank": 2,
+      "sequence_rank": 2,
+      "decay": 1.0,
+      "scaling": 1.0,
+      "iterations": 3
+    },
+    "sasrec": {
+      "dim": 32,
+      "blocks": 1,
+      "dropout": 0.2,
+      "lr": 0.001,
+      "epochs": 5,
+      "batch_size": 128
+    },
+    "models": [
+      "popular",
+      "zero",
+      "pad",
+      "bos",
+      "sasrec"
+    ]
+  },
+  "split_sha256": "0927225b8c9ac61c3c40b53b29f73eb085bb7f0d07568fa6d8ba49ed03ca4082",
+  "device": "cpu",
+  "threads": 2,
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "python": "3.12.14"
+}

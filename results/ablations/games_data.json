@@ -1,0 +1,25 @@
+{
+  "raw_events": 231780,
+  "events": 231780,
+  "users": 24303,
+  "items": 10672,
+  "train_events": 185349,
+  "train_users": 22209,
+  "catalog": 10093,
+  "t1": 1377129600,
+  "t2": 1390003200,
+  "split_sha256": "259c12f126eee77630e2b1dce3aea803e6d6261a5087828cbdbdd4d4e8fa8ba9",
+  "validation": {
+    "targets": 7654,
+    "evaluated": 4134,
+    "cold_target": 2479,
+    "empty_known_history": 1041
+  },
+  "test": {
+    "targets": 6985,
+    "evaluated": 3655,
+    "cold_target": 2579,
+    "empty_known_history": 751
+  },
+  "raw_sha256": "db2a33eba13cc437077e2c1f98cccf656922bf28203585d561c48fb1048184ea"
+}

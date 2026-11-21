@@ -1,0 +1,89 @@
+{
+  "validation": {
+    "n": 4134,
+    "ndcg": 0.0011779929331573267,
+    "hr": 0.0019351717464925011,
+    "eval_seconds": 0.15022854204289615,
+    "ms_per_user": 0.036339753759771685,
+    "short_n": 4075,
+    "short_ndcg": 0.0011950485363613223,
+    "full_n": 59,
+    "full_ndcg": 0.0,
+    "1_5_n": 2620,
+    "1_5_ndcg": 0.001748380900516985,
+    "6_20_n": 1258,
+    "6_20_ndcg": 0.0,
+    "21_plus_n": 256,
+    "21_plus_ndcg": 0.0011291594778042495
+  },
+  "test": {
+    "n": 3655,
+    "ndcg": 0.0006299868173639422,
+    "hr": 0.001094391244870041,
+    "eval_seconds": 0.12985837500309572,
+    "ms_per_user": 0.03552896716910964,
+    "short_n": 3596,
+    "short_ndcg": 0.0006403230860581781,
+    "full_n": 59,
+    "full_ndcg": 0.0,
+    "1_5_n": 2222,
+    "1_5_ndcg": 0.0008759651801787516,
+    "6_20_n": 1213,
+    "6_20_ndcg": 0.0002936580272943299,
+    "21_plus_n": 220,
+    "21_plus_ndcg": 0.0
+  },
+  "dataset": "games",
+  "model": "zero_scaled",
+  "seed": 29,
+  "fit_seconds": 0.483743584016338,
+  "peak_rss_mb": 186.65625,
+  "nnz": 177080,
+  "losses": null,
+  "core_norms": [
+    2.346662692188753,
+    4.936620613167439,
+    6.489734888527583
+  ],
+  "source_sha256": "516cc03c1712f17989d3508336311a4c8036e8922d58a7e2bff7483600cdcf07",
+  "config": {
+    "name": "mechanism_controls_v1",
+    "datasets": [
+      "ml1m",
+      "beauty",
+      "games"
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "quantiles": [
+      0.8,
+      0.9
+    ],
+    "k": 50,
+    "tensor": {
+      "rank": 12,
+      "window": 5,
+      "local_rank": 2,
+      "sequence_rank": 2,
+      "decay": 1.0,
+      "scaling": 1.0,
+      "iterations": 3
+    },
+    "models": [
+      "pad_balanced",
+      "start",
+      "zero_scaled",
+      "pad_scaled",
+      "bos_scaled",
+      "pad_scaled_frequency"
+    ]
+  },
+  "split_sha256": "259c12f126eee77630e2b1dce3aea803e6d6261a5087828cbdbdd4d4e8fa8ba9",
+  "device": "cpu",
+  "threads": 2,
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "python": "3.12.14"
+}
